@@ -12,20 +12,12 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
-
-        /* ==== YEH NAYA STYLE HAI ==== */
-        /* Yeh style sunishchit karega ki aapka resume 
-           bade screen par bhi sahi dikhe. */
         .resume-container {
             width: 100%;
             margin-left: auto;
             margin-right: auto;
-            max-width: 64rem; /* 1024px (yeh 'max-w-4xl' ke barabar hai) */
+            max-width: 64rem; 
         }
-        /* ============================ */
-
-
-        /* Simple print styles */
         @media print {
             body {
                 -webkit-print-color-adjust: exact;
@@ -42,14 +34,7 @@
         }
     </style>
 </head>
-<!-- Body se flex aur justify-center hata diya, kyunki ab CSS handle kar raha hai -->
 <body class="bg-gray-100 p-4 sm:p-8">
-
-    <!-- 
-      FIX: 
-      - Tailwind ke layout classes (max-w-4xl, mx-auto) hata diye.
-      - Ek naya custom class "resume-container" add kiya hai jo upar <style> block mein define kiya gaya hai.
-    -->
     <div class="resume-container bg-white rounded-lg shadow-xl p-8 sm:p-12">
         <!-- Header Section -->
         <header class="text-center mb-10">
@@ -220,7 +205,6 @@
                 <div>
                     <h3 class="text-lg font-semibold text-gray-800">Volunteer | <em>Akal Academy, Rajgarh, Himachal Pradesh</em></h3>
                     <ul class="list-disc list-inside mt-2 text-base text-gray-700">
-                        <!-- EDIT THIS: Describe your volunteering experience -->
                         <li>Actively participated in the 'Akal Connect' initiative, engaging with the community to promote the organization's mission and encourage new connections.</li>
                     </ul>
                 </div>
